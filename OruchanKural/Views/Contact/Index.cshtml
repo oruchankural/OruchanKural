@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4"></div>
+                <div class="col-md-8">
+                    <div class="contact-form">
+                        <div id="success"></div>
+                        <form action="https://formspree.io/f/xbjpnddp" method="POST" one>
+                            <div class="control-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="İsim Soyisim" data-rule="minlen:4" data-msg="Lütfen geçerli isim ve soyisiminizi giriniz" />
+                                <div class="validate"></div>
+                            </div>
+                            <div class="control-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="E-mail Adresiniz" data-rule="email" data-msg="Lütfen geçerli bir e-posta adresi giriniz" />
+                                <div class="validate"></div>
+                            </div>
+                            <div class="control-group">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Konu" data-rule="minlen:4" data-msg="Konuyu en az 8 harfli biçimde açıklayınız." />
+                                <div class="validate"></div>
+                            </div>
+                            <div class="control-group">
+                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Lütfen bize iletmek istediğiniz mesajlarınızı yazınız" placeholder="Mesajınız"></textarea>
+                                <div class="validate"></div>
+                            </div>
+                            <div>
+                                <button class="btn" type="submit" id="sendMessageButton">Mesaj Yolla</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

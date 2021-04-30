@@ -1,0 +1,149 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <title>Oruç Han Kural </title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="~/Content/Site/img/logo.jpg" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="~/Content/Site/css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand"><img src="~/Content/Site/img/logo.png"></a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ">
+                    <a href="/Home/Index/" class="nav-item nav-link active">Ana Sayfa</a>
+                    <a href="/About/Index/" class="nav-item nav-link">Hakkımda</a>
+                    <a href="#service" class="nav-item nav-link">Hizmetler</a>
+                    <a href="#" class="nav-item nav-link">Mağaza</a>
+                    <a href="/Blog/Index/" class="nav-item nav-link">Blog</a>
+                    <a href="/Contact/Index/" class="nav-item nav-link">İletişim</a>
+
+
+
+
+                </div>
+                <div class="socials">
+                    <a style="color:white;" href="/Register/Index/" ><i class="fas fa-user" style="color:darkred; padding: 3px;"></i>Kayıt Ol</a>
+                    <a style="color:white;" href="/Login/Login/" ><i class="fas fa-sign-in-alt" style="color:#C09B55; padding: 3px;"></i>Giriş Yap</a>
+                    <a style="color:white;" href="/Blog/Index/" ><i class="fas fa-shopping-basket" style="color:#C09B55; padding: 3px;"></i>Sepet</a>
+                    <a style="color:white;" href="/Blog/Index/" ><i class="fas fa-shopping-cart" style="color:#C09B55; padding: 3px;"></i>Ödeme</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero" id="home">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <div class="hero-content">
+                        <div class="hero-text">
+
+                            <h2></h2>
+                            <div class="typed-text">Kurumsal Web Sitesi , Kişisel Web Sitesi , SEO içerik, Logo ve Marka Tasarım ,  Sosyal Medya, Hizmetleri veriyorum.</div>
+                        </div>
+                        <div class="hero-btn">
+                            <a class="btn" href="">Teklif al</a>
+                            <a class="btn" href="">İletişime geç</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 d-none d-md-block">
+                    <div class="hero-image">
+                        <img src="/Content/Site/img/bgbg.png" alt="Hero Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nav Bar End -->
+    <!-- Hero Start -->
+
+        @RenderBody()
+
+    <!-- Blog End -->
+    <!-- Footer Start -->
+    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="footer-info">
+                    <h2>Oruç Han Kural</h2>
+                    <h3></h3>
+                    <div class="footer-menu">
+                        <p>+999999999999</p>
+                        <p>oruchankural@gmail.com</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://twitter.com/oruchankural" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/oruchan.kural.923/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/channel/UCMlWzeogUd0L_x24OisbhPQ" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/oruchankural/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/oru%C3%A7-han-kural-420683199/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container copyright">
+                <p>&copy; <a href="#">oruchankural.com.tr</a>, Tüm Hakları Saklıdır | Designed By <a href="">Oruç Han Kural</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Back to top button -->
+    <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+    <!-- Pre Loader -->
+    <div id="loader" class="show">
+        <div class="loader"></div>
+    </div>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/Site/lib/easing/easing.min.js"></script>
+    <script src="~/Content/Site/lib/wow/wow.min.js"></script>
+    <script src="~/Content/Site/lib/waypoints/waypoints.min.js"></script>
+    <script src="~/Content/Site/lib/typed/typed.min.js"></script>
+    <script src="~/Content/Site/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="~/Content/Site/lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="~/Content/Site/lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="~/Content/Site/mail/jqBootstrapValidation.min.js"></script>
+    <script src="~/Content/Site/mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="~/Content/Site/js/main.js"></script>
+</body>
+</html>
+

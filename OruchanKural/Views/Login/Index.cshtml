@@ -1,0 +1,25 @@
+﻿@using OruchanKural.Models.Siniflar
+@model List<Kullanici>
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table class="">
+
+    <tr>
+        <th>Kullanıcı Email</th>
+        <th>Kullanıcı Şifre</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+
+
+        <tr>
+            <td>@x.Email</td>
+            <td>@x.Password</td>
+        </tr>
+    }
+</table>
